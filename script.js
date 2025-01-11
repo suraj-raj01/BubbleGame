@@ -1,4 +1,4 @@
-var time = 60;
+var time = 6;
 var score = 0;
 var hit = 0;
 
@@ -19,6 +19,7 @@ function timer() {
             var e = document.querySelector("#timer").innerHTML = time;
         }else{
             clearInterval(e);
+            alert(`TIME OVER\nTOTAL SCORE : ${score}`)
         }
     },1000)
 }
