@@ -1,4 +1,4 @@
-var time = 6;
+var time = 90;
 var score = 0;
 var hit = 0;
 
@@ -19,7 +19,12 @@ function timer() {
             var e = document.querySelector("#timer").innerHTML = time;
         }else{
             clearInterval(e);
-            alert(`TIME OVER\nTOTAL SCORE : ${score}`)
+            document.getElementById("message").style.display= "block"
+            document.querySelector("#totalscore").textContent = score;
+            document.querySelector("#btn").addEventListener("click",function(){
+                document.getElementById("message").style = 'none';
+                location.reload();
+            })
         }
     },1000)
 }
