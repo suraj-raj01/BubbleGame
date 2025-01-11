@@ -82,3 +82,31 @@ body{
     background-color: deepskyblue;
     color: white;
 }
+h2{
+    color: white;
+}
+@media (max-width:500px){
+    #main{
+        width: 95%;
+        height: 95vh;
+    }
+    #topmenu{
+        padding: 0px 5px;
+    }
+    #topmenu .elem{
+        font-size: .7rem;
+    }
+    #topmenu .box{
+        padding: 5px 10px;
+    }
+    #bottommenu{
+        padding: 10px;
+    }
+    .bubble{
+        height: 40px;
+        height: 40px;
+    }
+    h2{
+        font-size: 16px;
+    }
+}
